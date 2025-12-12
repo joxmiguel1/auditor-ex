@@ -2,7 +2,8 @@
 
 **Auditor EX** es una suite de análisis SEO y rendimiento web construida en PHP y JavaScript puro. Diseñada para ser ligera, rápida y con una experiencia de usuario moderna (Dark/Light mode).
 
-![Auditor EX Preview](jox3.png)
+<img width="865" height="1106" alt="image" src="https://github.com/user-attachments/assets/73113f9d-f2e5-430f-8873-aae9b6bfbf08" />
+
 
 ## ✨ Características
 
