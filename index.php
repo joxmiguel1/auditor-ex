@@ -609,6 +609,10 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
                             <div class="tool-name">Security Headers</div>
                             <div class="tool-desc">Auditoría de seguridad HTTP.</div>
                         </a>
+                        <a href="https://who.is/dns/<?php echo $cleanUrl; ?>" target="_blank" class="tool-card">
+                            <div class="tool-name">DNS Check</div>
+                            <div class="tool-desc">Revisión de propagación de DNS.</div>
+                        </a>
                     </div>
                 </div>
             </div>
