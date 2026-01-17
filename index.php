@@ -218,7 +218,7 @@ function analyzePerformance($url) {
 
     // Score Calculation
     $score = 0;
-    if ($cdnDetected) $score += 20;
+    if ($cdnDetected) $score += 10;
     if ($loadTime <= 200) $score += 25; elseif ($loadTime <= 1000) $score += 15; else $score += 5;
     if ($totalImages > 0) {
         $optimizedImages = $totalImages - $missingAlt;
@@ -231,8 +231,8 @@ function analyzePerformance($url) {
     if ($isCompressed) $score += 5;
     if ($cacheStatus === "Detectado") $score += 5;
     
-    if ($jsTotal > 0) { if ($jsMinified === $jsTotal) $score += 5; else $score += floor(($jsMinified / $jsTotal) * 5); } else $score += 5;
-    if ($cssTotal > 0) { if ($cssMinified === $cssTotal) $score += 5; else $score += floor(($cssMinified / $cssTotal) * 5); } else $score += 5;
+    if ($jsTotal > 0) { if ($jsMinified === $jsTotal) $score += 10; else $score += floor(($jsMinified / $jsTotal) * 10); } else $score += 10;
+    if ($cssTotal > 0) { if ($cssMinified === $cssTotal) $score += 10; else $score += floor(($cssMinified / $cssTotal) * 10); } else $score += 10;
 
     return [
         'url' => $info['url'],
