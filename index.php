@@ -605,6 +605,10 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
                             <div class="tool-name">PageSpeed Web</div>
                             <div class="tool-desc">Versión web completa de Google PSI.</div>
                         </a>
+                        <a href="https://tools.pingdom.com/" target="_blank" class="tool-card">
+                            <div class="tool-name">Pingdom Tools</div>
+                            <div class="tool-desc">Test rápido de rendimiento y latencia.</div>
+                        </a>
                         <a href="https://securityheaders.com/?q=<?php echo $fullUrlEnc; ?>" target="_blank" class="tool-card">
                             <div class="tool-name">Security Headers</div>
                             <div class="tool-desc">Auditoría de seguridad HTTP.</div>
